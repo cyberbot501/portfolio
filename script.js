@@ -21,7 +21,7 @@ let changeText = ()=>{
     Array.from(currentWord.children).forEach((letter,i)=>{
         setTimeout(()=>{
             letter.className = "letter out"; 
-        },i = 80);
+        },i * 80);
     });
     nextWord.style.opacity="1";
     Array.from(nextWord.children).forEach((letter,i)=>{
@@ -30,6 +30,8 @@ let changeText = ()=>{
             letter.className = "letter in";
         },340 + i * 80);
     });
+
+    currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
 }
 
 changeText();
