@@ -211,3 +211,8 @@ a.btn::before{
 a.btn:hover::before{
     width: 100%;
 }
+
+.social-icon{
+    margin-top: 8rem;
+    
+}
