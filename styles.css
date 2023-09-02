@@ -302,3 +302,11 @@ a.btn:hover::before{
     margin-bottom: 1.5rem;
 }
 
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+    background-color: var(--secon-bg-color);
+}
+
