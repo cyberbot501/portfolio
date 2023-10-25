@@ -662,9 +662,28 @@ section{
 
 
 
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
 
+.scroll-buttom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
 
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
 
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}
 
 
 @keyframes html{
@@ -787,7 +806,7 @@ section{
     .navlist{
         display: flex;
         position: absolute;
-        top: -1000;
+        top: -1000px;
         right: 0;
         left: 0;
         flex-direction: column;
@@ -795,6 +814,7 @@ section{
         text-align: left;
         padding: 0 5%;
         transition: all .45s ease;
+        margin-top: -10px;
     }
 
     .navlist a{
@@ -806,4 +826,25 @@ section{
     .navlist.open{
         top: 100%;
     }
+
+    .home{
+        grid-template-columns: 1fr;
+    }
+
+    .skill-main{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width:420px) {
+    html{
+        font-size: 80%;
+    }
+
+    .footer p{
+        font-size: .6rem;
+    }
+
+    
 }
