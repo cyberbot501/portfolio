@@ -42,23 +42,27 @@
             <p>Frontend developer with a passion for crafting engaging user interfaces and a knack for turning design into seamless, interactive web experiences. Committed to creating visually appealing and user-friendly websites that deliver exceptional user satisfaction.</p>
 
             <div class="info-box">
-                <div class="email-info">
-                    <h5>Email :</h5>
-                    <span>softwareengineerjoycy@gmail.com</span>
-                </div>
                 <div class="linkedIn-info">
                     <h5>LinkedIn :</h5>
-                    <span>AkinrindeJoel</span>
+                    <a href="https://www.linkedin.com/in/akinrinde-joel/">AkinrindeJoel</a>
+                </div>
+                <div class="linkedIn-info">
+                    <h5>GitHub :</h5>
+                    <a href="https://github.com/cyberbot501/portfolio">Cyberbot501</a>
+                </div>
+                <div class="email-info">
+                    <h5>Email :</h5>
+                    <a href="mailto:softwareengineerjoycy@gmail.com">softwareengineerjoycy@gmail.com</span>
                 </div>
             </div>
 
             <div class="btn-box">
-                <a href="#" class="btn">Download CV</a>
-                <a href="#" class="btn">Hire Me now!</a>
+                <a href="./images/Akinrinde_Joel_CV.pdf"  download="Akinrinde_Joel_CV" class="btn">Download CV</a>
+                <a href="https://wa.me/+2348082850053"  class="btn">Hire Me now!</a>
             </div>
 
             <div class="social-icon">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
                 <a href="#"><i class='bx bxl-linkedin'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
                 <a href="#"><i class='bx bxl-instagram'></i></a>
@@ -67,32 +71,61 @@
 
         <div class="home-image scroll-scale">
             <div class="img-box">
-                <img src="./images/8.png" alt="">
+              <img src="./images/8.png" alt="Profile" id="bouncing-img">
             </div>
-        </div>
+          </div>
+          
 
 
     </section>
 
 
     <section id="about" class="about">
-
         <div class="about-content scroll-scale">
-            <span>Let me intoduce myself</span>
-            <h2>About me</h2>
-            <h3>CyberBot501</h3>
-            <p>I Akinrinde Joel, I'm a student of Ladoke Akintola University of Technology, Department of Computer Science.
-                I started my Tech career year 2019, i started with Web designing and Wordpress web development. an sinnce then have been 
-                trying to improve more and more, i started my Frontend jounery at the year of 2021, i started with Vanilla JS (HTML, CSS & JavaScript)
-                and have been experienced for 2years and 7months now, But now have extenteded my jounery moving to next phase of Frontend development
-                Which is learning of React in the year 2023......
+          <span>Let me introduce myself</span>
+          <h2>About me</h2>
+          <h3>CyberBot501</h3>
+          
+          <p id="short-story">
+            In 2020, I took my first step into the world of technology. It was a time of self-discovery and learning, and I began my journey with WordPress. The flexibility and power of building websites with ease captivated me, and I was hooked. I spent countless hours tinkering with themes, creating content, and enhancing my skills as I gradually immersed myself in web development.
+          </p>
+          
+          <p id="full-story" style="display: none;">
+            In 2020, I took my first step into the world of technology. It was a time of self-discovery and learning, and I began my journey with WordPress. The flexibility and power of building websites with ease captivated me, and I was hooked. I spent countless hours tinkering with themes, creating content, and enhancing my skills as I gradually immersed myself in web development.
 
-                <div class="btn-box">
-                    <a href="#" class="btn">Read more!</a>
-                </div>
-            </p>
+            As the months passed, I became more curious about the intricacies of frontend development. In 2021, my interest in design, user interfaces, and creating seamless web experiences pushed me to delve deeper into frontend technologies. I took on JavaScript, CSS, and eventually ReactJS, each step adding a new layer of knowledge and excitement. My passion for crafting responsive and engaging websites became clearer, and I knew this was the direction I wanted to pursue.
+            
+            In the same year, I received the exciting news that I had been accepted into Ladoke Akintola University of Technology, where I began my journey to study Computer Science. This was a pivotal moment for me, as I was now able to combine my passion for technology with a formal education that would empower me to push my boundaries further.
+            
+            Since then, I've been continuously growing my skills, embracing challenges, and staying focused on the path ahead. Every day is a learning opportunity, whether it’s through my academic studies, hands-on projects, or personal development. I remain committed to becoming the best version of myself in tech and contributing to the ever-evolving digital landscape.
+            
+            
+          </p>
+          
+          <div class="btn-box">
+            <a href="javascript:void(0);" id="read-more-btn" class="btn">Read more!</a>
+          </div>
         </div>
-    </section>
+      </section>
+      
+      <script>
+        // JavaScript to toggle between the short and full story
+        document.getElementById('read-more-btn').addEventListener('click', function() {
+          const fullStory = document.getElementById('full-story');
+          const shortStory = document.getElementById('short-story');
+          const btn = document.getElementById('read-more-btn');
+          
+          if (fullStory.style.display === 'none') {
+            fullStory.style.display = 'block';
+            shortStory.style.display = 'none';
+            btn.innerHTML = 'Read less!';
+          } else {
+            fullStory.style.display = 'none';
+            shortStory.style.display = 'block';
+            btn.innerHTML = 'Read more!';
+          }
+        });
+      </script>
 
     <section id="services" class="services">
         <div class="main-text scroll-scale">
@@ -107,9 +140,9 @@
                 <p>As a Developer Relations (DevRel) specialist, I bridge the gap between developers and our products/services
                      by facilitating communication, offering technical support, creating valuable resources, and advocating for developers' needs.
                 </p>
-                <div class="btn-box service-btn">
+                <!-- <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
-                </div>
+                </div> -->
             </div>
 
             <div class="service-box">
@@ -119,9 +152,9 @@
                      seamless and visually appealing user experience, 
                   to integrate functionality and deliver exceptional web applications.
                 </p>
-                <div class="btn-box service-btn">
+                <!-- <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
-                </div>
+                </div> -->
             </div>
 
             <div class="service-box">
@@ -130,9 +163,9 @@
                 <p>As a WordPress developer, I specialize in designing, customizing, and extending WordPress websites and themes, 
                     ensuring they meet clients' needs and provide a user-friendly content management system for easy updates.
                 </p>
-                <div class="btn-box service-btn">
+                <!-- <div class="btn-box service-btn">
                     <a href="#" class="btn">Read More</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -158,7 +191,7 @@
 
                 <div class="skill-bar">
                     <div class="info">
-                        <p>CSS</p>
+                        <p>CSS/Tailwindcss</p>
                         <p>80%</p>
                     </div>
                     <div class="bar">
@@ -169,7 +202,7 @@
                 <div class="skill-bar">
                     <div class="info">
                         <p>JavaScript</p>
-                        <p>76%</p>
+                        <p>80%</p>
                     </div>
                     <div class="bar">
                         <span class="javascript"></span>
@@ -179,7 +212,7 @@
                 <div class="skill-bar">
                     <div class="info">
                         <p>ReactJS</p>
-                        <p>50%</p>
+                        <p>80%</p>
                     </div>
                     <div class="bar">
                         <span class="reactjs"></span>
@@ -189,7 +222,7 @@
                 <div class="skill-bar">
                     <div class="info">
                         <p>Wordpress</p>
-                        <p>90%</p>
+                        <p>70%</p>
                     </div>
                     <div class="bar">
                         <span class="wordpress"></span>
@@ -198,8 +231,30 @@
 
                 <div class="skill-bar">
                     <div class="info">
-                        <p>CyberSecurity</p>
-                        <p>30%</p>
+                        <p>Version Control</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="version"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>API Integration</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="api"></span>
+                    </div>
+                </div>
+
+
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Next JS</p>
+                        <p>60%</p>
                     </div>
                     <div class="bar">
                         <span class="cybersecurity"></span>
@@ -260,6 +315,23 @@
                             <small>Time Management</small>
                         </div>
                     </div>
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        <div class="text">
+                            <big>70%</big>
+                            <small>Time Management</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="75"></div>
+                        <div class="text">
+                            <big>75%</big>
+                            <small>Problem Solving</small>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
